@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>打方块!</title>
+  </head>
+  <body>
+    <h1>打方块!</h1>
+    <button id="rules-btn" class="btn rules-btn">显示规则</button>
+    <div id="rules" class="rules">
+      <h2>游戏规则:</h2>
+      <p>
+        使用左右箭头控制木板反弹小球击碎方块
+      </p>
+      <p>如果没有接到小球,木板和分数会重置.</p>
+      <button id="close-btn" class="btn">关闭</button>
+    </div>
+
+    <canvas id="canvas" width="800" height="600"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>

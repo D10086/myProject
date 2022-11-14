@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./2.css">
+    <title>the tow</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="line-1 no-animation"></div>
+            <div class="line-2 no-animation"></div>
+            <div class="line-3 no-animation"></div>
+        </div>
+    </div>
+</body>
+<script>
+    let btn = document.getElementsByClassName('box')[0]
+    let isGo = true
+
+    btn.onclick = function () {
+        this.className = 'box'
+        for (var i = 0; i < this.children.length; i++) {
+            this.children[i].classList.remove('no-animation')
+        }
+        if (isGo == true) {
+            this.className = 'box active'
+            isGo = !isGo
+        }else{
+            this.className = 'box reversal'
+            isGo = !isGo
+        }
+    }
+
+
+</script>
+
+</html>
